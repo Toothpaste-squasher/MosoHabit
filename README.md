@@ -1,6 +1,6 @@
 # MosoHabit Tuition Website
 
-A premium, interactive landing page for **MosoHabit Tuition**—a specialised online tutoring service helping Years 7–12 students in Canberra achieve top marks in BSSS Mathematics, Physics, and Science.
+A premium, interactive landing page for **MosoHabit Tuition**—a highly specialised online tutoring service helping Years 7–12 students in Canberra achieve top marks in BSSS Mathematics and Physics.
 
 ---
 
@@ -20,14 +20,15 @@ The name **MosoHabit** and the website's core visual theme are inspired by the m
     *   **Explosive Growth (Scroll 93% to 100%)**: Shoots up 9 segments of stalk, wobbly joint nodes, and upward-pointing bamboo leaves rapidly as the user reaches the booking form.
 *   **Wiggling "Click me!" Seedling Trigger**: When minimized by default, a floating green seedling button is shown with a subtle, pulsating tooltip prompting visitors to expand it.
 *   **ACT BSSS Compliance**: Explicitly tailored to the Canberra college BSSS system, including a friendly but clear academic integrity notice linking to the official [ACT BSSS Academic Integrity policy](https://www.bsss.act.edu.au/academic_integrity_information).
-*   **Fully Responsive & Interactive FAQ Accordion**: Sleek card layout styling, smooth sliding animations, and clean, bulleted rates structures.
+*   **Transparent Pricing Plans**: Structured card columns displaying rates for Group Practice ($30/hr), Years 7–10 Tutoring ($55/hr), and Years 11–12 BSSS College ($60/hr) with featured senior specialization.
+*   **Fully Responsive & Interactive FAQ Accordion**: Sleek card layout styling, smooth sliding animations, and deep-linked pricing integration.
 *   **Australian English Spelling**: Checked and standardised page-wide (e.g., *specialised*, *prioritise*, *personalised*, *practise*).
 
 ---
 
 ## 📂 File Structure
 
-*   **`index.html`**: Semantic layout containing hero sections, tutor story, teaching philosophies, offerings, FAQ accordion, and the vector coordinates/timeline curves for the SVG growth tracker.
+*   **`index.html`**: Semantic layout containing hero sections, tutor story, teaching philosophies, offerings, pricing columns, FAQ accordion, and the vector coordinates/timeline curves for the SVG growth tracker.
 *   **`style.css`**: Styling system built on Vanilla CSS variables. Handles glassmorphic blurs, hover transparencies, leaf pop-up spring transitions (`cubic-bezier`), and keyframe animations.
 *   **`script.js`**: Calculates scroll position dynamically relative to the `#contact` section, triggers staggered root/stalk animations, and handles widget minimizing/restoration.
 

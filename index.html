@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="1-on-1 online tutoring for Canberra Years 7-12 BSSS system students. Excel in Maths, Physics, and Science with a 99.80 ATAR tutor, Canberra Award winner, and Year 12 Dux. Book your free 1-hour trial.">
+        content="Specialised 1-on-1 online tutoring for Canberra Years 7-12 BSSS students. Excel in Maths & Physics with a 99.80 ATAR tutor, Canberra Award winner, and Year 12 Dux. Book your free 1-hour trial.">
     <meta name="keywords"
-        content="Canberra tutoring, BSSS tutoring, Year 12 tutor, Year 11 tutor, Year 10 tutor, ATAR, ACT tutoring, online maths tutor, online physics tutor, online science tutor, Canberra college tutor">
+        content="Canberra tutoring, BSSS tutoring, Year 12 tutor, Year 11 tutor, Year 10 tutor, ATAR, ACT tutoring, online maths tutor, online physics tutor, BSSS Physics, BSSS Maths, Canberra college tutor">
     <meta name="author" content="MosoHabit Tuition">
     <title>MosoHabit Tuition | Canberra BSSS Online Tutoring (Years 7-12)</title>
 
@@ -17,6 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -31,7 +34,8 @@
     <header class="header">
         <div class="container header-container">
             <a href="#home" class="logo">
-                <span class="logo-accent">Moso</span>Habit <span class="logo-sub">Tuition</span>
+                <img src="assets/icon.svg" alt="MosoHabit Logo" class="logo-img">
+                <span class="logo-text"><span class="logo-accent">Moso</span>Habit <span class="logo-sub">Tuition</span></span>
             </a>
 
             <nav class="nav" id="nav-menu">
@@ -40,6 +44,7 @@
                     <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
                     <li class="nav-item"><a href="#why-us" class="nav-link">Why Us</a></li>
                     <li class="nav-item"><a href="#subjects" class="nav-link">Subjects</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
                     <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
                 </ul>
             </nav>
@@ -61,9 +66,9 @@
                     <span class="badge hero-badge">Online Tutoring • Canberra BSSS</span>
                     <h1 class="hero-title">Unlock Academic Success in Canberra</h1>
                     <p class="hero-description">
-                        1-on-1 online tutoring for Years 7-12. Specialised in BSSS Maths, Physics and Science.
-                        Led by a <strong>99.80 ATAR</strong> tutor, Canberra Maths and Physics Award Winner, and Year 12
-                        Dux. Start today
+                        1-on-1 online tutoring for Years 7-12. Focused <strong>exclusively on BSSS Maths & Physics</strong>.
+                        Taught by a <strong>99.80 ATAR</strong> tutor, Canberra Maths and Physics Award Winner, and Year 12
+                        Dux. I specialise my skills to deliver the absolute highest quality instruction. Start today
                         with a <strong>free 1-hour trial lesson</strong>!
                     </p>
                     <div class="hero-actions">
@@ -72,127 +77,67 @@
                     </div>
                     <div class="hero-ad-banner">
                         <i class="fa-solid fa-circle-check text-accent"></i>
-                        <span>Rate depends on year level • Contact for quote</span>
+                        <span>Rate depends on year level • Transparent pricing below</span>
                     </div>
                 </div>
                 <div class="hero-image-wrapper reveal reveal-right">
                     <!-- SVG illustration representing physics, math, online learning -->
-                    <svg class="hero-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+                        <!-- Define a square clipping mask for the inner elements -->
                         <defs>
-                            <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#0a2540" />
-                                <stop offset="100%" stop-color="#003b6f" />
-                            </linearGradient>
-                            <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#008b9c" />
-                                <stop offset="100%" stop-color="#00ced1" />
-                            </linearGradient>
-                            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#ffd034" />
-                                <stop offset="100%" stop-color="#ffb800" />
-                            </linearGradient>
-                            <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-                                <feDropShadow dx="2" dy="6" stdDeviation="6" flood-color="#0a2540"
-                                    flood-opacity="0.15" />
-                            </filter>
+                            <clipPath id="square-clip">
+                                <rect x="20" y="20" width="460" height="460" rx="30" ry="30" />
+                            </clipPath>
                         </defs>
-                        <!-- Background Blobs -->
-                        <path
-                            d="M420,150 C470,220 480,310 430,370 C380,430 270,460 190,440 C110,420 60,350 50,270 C40,190 70,100 140,70 C210,40 370,80 420,150 Z"
-                            fill="#f0f7f8" />
-                        <circle cx="430" cy="110" r="25" fill="#ffd034" opacity="0.8" />
-                        <circle cx="80" cy="380" r="18" fill="#008b9c" opacity="0.2" />
 
-                        <!-- Mathematical / Physics Ornaments -->
-                        <!-- Atom Icon -->
-                        <g transform="translate(380, 240) scale(0.65)" opacity="0.8">
-                            <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#008b9c" stroke-width="2"
-                                transform="rotate(30, 50, 50)" />
-                            <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#008b9c" stroke-width="2"
-                                transform="rotate(-30, 50, 50)" />
-                            <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="#008b9c" stroke-width="2"
-                                transform="rotate(90, 50, 50)" />
-                            <circle cx="50" cy="50" r="8" fill="#ffd034" />
+                        <!-- Solid background square with slightly rounded corners (Option 1: Warm Cream) -->
+                        <rect x="20" y="20" width="460" height="460" rx="30" ry="30" fill="#FDFBF0" />
+
+                        <!-- Inner elements wrapped in the square clip-path -->
+                        <g clip-path="url(#square-clip)">
+                            <!-- Top Bamboo Segment Background Fill (Light Sage Green) -->
+                            <path
+                                d="M 246,10 C 246,100 246,150 246,180 C 243,195 231,208 232,220 C 233,233 252,236 272,236 C 307,236 370,236 378,236 C 392,236 397,222 394,208 C 390,190 382,150 382,10 Z"
+                                fill="#8A9A86" />
+
+                            <!-- Top Bamboo Segment Outline -->
+                            <path
+                                d="M 246,10 C 246,100 246,150 246,180 C 243,195 231,208 232,220 C 233,233 252,236 272,236 C 307,236 370,236 378,236 C 392,236 397,222 394,208 C 390,190 382,150 382,10"
+                                fill="none" stroke="#3B5249" stroke-width="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                            <!-- Top Segment Inner Vertical Highlight Line -->
+                            <path d="M 345,70 C 347,100 346,130 345,155" fill="none" stroke="#3B5249" stroke-width="8.5"
+                                stroke-linecap="round" />
+
+                            <!-- Bottom Bamboo Segment Background Fill (Light Sage Green) -->
+                            <path
+                                d="M 246,490 C 246,390 246,330 246,305 C 246,290 231,273 234,260 C 238,247 265,254 280,254 C 320,254 375,253 392,256 C 405,258 402,274 396,288 C 388,325 382,395 382,460 Z"
+                                fill="#8A9A86" />
+
+                            <!-- Bottom Bamboo Segment Outline -->
+                            <path
+                                d="M 246,490 C 246,390 246,330 246,305 C 246,290 231,273 234,260 C 238,247 265,254 280,254 C 320,254 375,253 392,256 C 405,258 402,274 396,288 C 388,325 382,395 382,460"
+                                fill="none" stroke="#3B5249" stroke-width="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                            <!-- Bottom Segment Inner Vertical Highlight Line -->
+                            <path d="M 267,330 C 265,360 264,390 264,445" fill="none" stroke="#3B5249"
+                                stroke-width="8.5" stroke-linecap="round" />
+
+                            <!-- Leaves Background Fill & Outline -->
+                            <!-- Top/Vertical Leaf -->
+                            <path
+                                d="M 226,238 C 212,198 168,128 118,98 C 112,94 108,105 118,127 C 138,167 176,226 224,242 Z"
+                                fill="#8A9A86" stroke="#3B5249" stroke-width="9" stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                            <!-- Bottom/Angled Leaf -->
+                            <path
+                                d="M 224,242 C 189,229 126,196 84,170 C 79,166 82,177 95,192 C 120,222 174,246 218,249 Z"
+                                fill="#8A9A86" stroke="#3B5249" stroke-width="9" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </g>
-
-                        <!-- Formulas floating -->
-                        <text x="320" y="80" font-family="'Outfit', sans-serif" font-size="16" font-weight="700"
-                            fill="#0a2540" opacity="0.45">y = mx + c</text>
-                        <text x="80" y="120" font-family="'Outfit', sans-serif" font-size="18" font-weight="700"
-                            fill="#008b9c" opacity="0.6">E = mc²</text>
-                        <text x="360" y="410" font-family="'Outfit', sans-serif" font-size="18" font-weight="700"
-                            fill="#0a2540" opacity="0.3">F = ma</text>
-                        <text x="70" y="270" font-family="'Outfit', sans-serif" font-size="20" font-weight="700"
-                            fill="#008b9c" opacity="0.5">Δx/Δt = v</text>
-
-                        <!-- Sine Wave -->
-                        <path d="M50,180 Q80,140 110,180 T170,180" fill="none" stroke="#008b9c" stroke-width="3"
-                            stroke-linecap="round" opacity="0.4" />
-                        <!-- DNA Spiral snippet -->
-                        <path d="M410,320 Q425,300 440,320" fill="none" stroke="#ffd034" stroke-width="2"
-                            stroke-linecap="round" />
-                        <path d="M410,330 Q425,350 440,330" fill="none" stroke="#008b9c" stroke-width="2"
-                            stroke-linecap="round" />
-                        <line x1="418" y1="322" x2="418" y2="328" stroke="#0a2540" stroke-width="1.5" />
-                        <line x1="425" y1="320" x2="425" y2="330" stroke="#0a2540" stroke-width="1.5" />
-                        <line x1="432" y1="322" x2="432" y2="328" stroke="#0a2540" stroke-width="1.5" />
-
-                        <!-- Main Laptop / Graphic -->
-                        <g filter="url(#shadow)">
-                            <!-- Laptop Body Base -->
-                            <path d="M120,380 L380,380 C390,380 395,385 395,390 L105,390 C105,385 110,380 120,380 Z"
-                                fill="#d0dada" />
-                            <rect x="195" y="390" width="110" height="6" rx="3" fill="#9ba8a8" />
-                            <!-- Screen Base -->
-                            <rect x="135" y="160" width="230" height="220" rx="8" fill="#0a2540" />
-                            <!-- Screen Inner -->
-                            <rect x="143" y="168" width="214" height="204" rx="4" fill="#ffffff" />
-                            <!-- Website layout inside screen -->
-                            <!-- Header inside laptop screen -->
-                            <rect x="153" y="178" width="50" height="10" rx="3" fill="#0a2540" />
-                            <circle cx="330" cy="183" r="5" fill="#008b9c" />
-                            <circle cx="342" cy="183" r="5" fill="#ffd034" />
-                            <!-- Main Video Panel -->
-                            <rect x="153" y="198" width="110" height="90" rx="4" fill="#f0f4f8" />
-                            <!-- Video avatar lines (Tutor) -->
-                            <circle cx="208" cy="235" r="16" fill="#008b9c" />
-                            <rect x="193" y="256" width="30" height="15" rx="4" fill="#0a2540" />
-                            <!-- Sidebar stats/formulas inside laptop screen -->
-                            <rect x="273" y="198" width="74" height="20" rx="3" fill="#e6f4f5" />
-                            <rect x="278" y="205" width="40" height="6" rx="2" fill="#008b9c" />
-                            <rect x="273" y="225" width="74" height="30" rx="3" fill="#fff5d6" />
-                            <rect x="278" y="232" width="30" height="6" rx="2" fill="#ffd034" />
-                            <rect x="278" y="242" width="50" height="6" rx="2" fill="#0a2540" />
-                            <!-- Graph drawing on dashboard inside laptop screen -->
-                            <rect x="153" y="296" width="194" height="66" rx="4" fill="#fcfcfc" stroke="#e0e8e8"
-                                stroke-width="1" />
-                            <path d="M165,346 L200,320 L240,335 L280,305 L310,315 L335,302" fill="none" stroke="#008b9c"
-                                stroke-width="3" stroke-linecap="round" />
-                            <circle cx="200" cy="320" r="4" fill="#008b9c" />
-                            <circle cx="280" cy="305" r="4" fill="#008b9c" />
-                            <circle cx="335" cy="302" r="4" fill="#ffd034" />
-                        </g>
-
-                        <!-- Books Stacked Near Laptop -->
-                        <g transform="translate(60, 310)" filter="url(#shadow)">
-                            <!-- Book 1 (Bottom, Teal) -->
-                            <path d="M0,40 L60,40 L60,52 L0,52 Z" fill="#008b9c" />
-                            <path d="M60,40 C62,40 64,42 64,45 L64,47 C64,50 62,52 60,52 Z" fill="#e0e8e8" />
-                            <rect x="5" y="43" width="50" height="6" fill="#ffffff" opacity="0.3" />
-                            <!-- Book 2 (Middle, Gold) -->
-                            <path d="M5,25 L65,25 L65,37 L5,37 Z" fill="#ffd034" />
-                            <path d="M65,25 C67,25 69,27 69,30 L69,32 C69,35 67,37 65,37 Z" fill="#e0e8e8" />
-                            <rect x="10" y="28" width="50" height="6" fill="#ffffff" opacity="0.4" />
-                            <!-- Book 3 (Top, Dark Blue) -->
-                            <path d="M12,10 L62,10 L62,22 L12,22 Z" fill="#0a2540" />
-                            <path d="M62,10 C64,10 66,12 66,15 L66,17 C66,20 64,22 62,22 Z" fill="#e0e8e8" />
-                            <rect x="17" y="13" width="40" height="6" fill="#008b9c" opacity="0.8" />
-                        </g>
-
-                        <!-- Floating Sparkles -->
-                        <path d="M120,80 L123,73 L130,70 L123,67 L120,60 L117,67 L110,70 L117,73 Z" fill="#ffd034" />
-                        <path d="M380,170 L382,165 L387,163 L382,161 L380,156 L378,161 L373,163 L378,165 Z"
-                            fill="#008b9c" />
                     </svg>
                 </div>
             </div>
@@ -302,21 +247,16 @@
                         <h2>My Journey & Mission</h2>
                         <p>
                             Hi, I am Sam. As a former ACT high school student, I sat where you are sitting now. Through
-                            consistent organisation, conceptual debugging, and learning how to address rubric directly,
-                            I graduated as College Dux with a 99.80 ATAR, and recieved the Canberra Award for Excellence
-                            in Mathematics and Physics.
+                            consistent organisation, conceptual debugging, and learning how to address rubrics directly,
+                            I graduated as College Dux with a 99.80 ATAR, and received the Canberra Award for Excellence
+                            in Mathematics and Physics—my two highest-scoring subjects.
                         </p>
                         <p>
-                            Since graduating, my goal has been to demystify this path for others. Since 2024, I have
-                            tutored more than 20 students individually, helping them clarify difficult mathematics
-                            rules, write rigorous lab reports, and prepare for tests and exams.
+                            Rather than offering tutoring in every general subject to grow my business, <strong>I choose to focus exclusively on Maths and Physics</strong>. I believe that by specialising, I can remain the best of the best and deliver the absolute highest quality support to my students, helping them clarify complex mathematics, master rigorous physics equations, and ace exams.
                         </p>
                         <p>
-                            I believe tutoring is about more than just teaching the content. Many students think they
-                            understand a topic well but still struggle to apply their knowledge during exams or doing
-                            assignments. That's why I created MosoHabit Tuition to combine academic support with
-                            effective study habits, helping students build strong understanding, confidence, and
-                            long-term success.
+                            I believe tutoring is about more than just teaching content. Many students think they
+                            understand a topic well but struggle to apply knowledge during exams. That's why I created MosoHabit Tuition to combine deep Maths and Physics mastery with effective study habits, helping students build long-term success.
                         </p>
                         <div class="tutor-tags" style="margin-top: 24px;">
                             <span class="tutor-tag"><i class="fa-solid fa-circle-check"></i> BSSS Expert</span>
@@ -337,10 +277,15 @@
                         <h2>What is "MosoHabit"?</h2>
                         <p class="section-subtitle">Consistent habits build confidence, and confidence yields
                             outstanding marks.</p>
-                        <p class="philosophy-desc" style="max-width: 800px; margin: 20px auto 0 auto; color: var(--color-text-light); line-height: 1.6; font-size: 1.025rem;">
-                            Our name is inspired by the <strong>Moso bamboo</strong>. For its first four years, the plant grows entirely underground, building a massive root system invisible to the eye. Then, in the fifth year, it shoots up over 80 feet in just a few weeks. 
+                        <p class="philosophy-desc"
+                            style="max-width: 800px; margin: 20px auto 0 auto; color: var(--color-text-light); line-height: 1.6; font-size: 1.025rem;">
+                            Our name is inspired by the <strong>Moso bamboo</strong>. For its first four years, the
+                            plant grows entirely underground, building a massive root system invisible to the eye. Then,
+                            in the fifth year, it shoots up over 80 feet in just a few weeks.
                             <br><br>
-                            Academic success follows the same law: weeks of consistent foundation-building (the roots) prepare you for explosive vertical results (the shoot). <strong>Scroll the page to watch our Moso bamboo tracker grow!</strong>
+                            Academic success follows the same law: weeks of consistent foundation-building (the roots)
+                            prepare you for explosive vertical results (the shoot). <strong>Scroll the page to watch our
+                                Moso bamboo tracker grow!</strong>
                         </p>
                     </div>
 
@@ -362,7 +307,7 @@
                             <p>Outstanding marks are built on consistent habits, but you can only build a long-lasting
                                 habit if you actually enjoy the journey. Discipline can be helpful, but let’s be honest,
                                 it might only last a few hours or days—it isn’t always there. I have been there too; I
-                                really get it. When I started truly enjoying Maths and Science, studying didn’t feel
+                                really get it. When I started truly enjoying Maths and Physics, studying didn’t feel
                                 like a hassle anymore, but a natural, sustainable part of my every day entertainment. I
                                 will try my best to guide you, so that the process of getting good grades fun and
                                 rewarding every step of the way.
@@ -459,10 +404,9 @@
         <section id="subjects" class="subjects">
             <div class="container">
                 <div class="section-header text-center reveal">
-                    <span class="badge">Subjects I Tutor</span>
-                    <h2>Expert Subject Support (Years 7-12)</h2>
-                    <p class="section-subtitle">Targeted learning designed to build deep understanding and test-day
-                        confidence.</p>
+                    <span class="badge">Specialised Subjects</span>
+                    <h2>Maths & Physics Specialisation</h2>
+                    <p class="section-subtitle">I focus exclusively on the two subjects I mastered best to guarantee the highest quality support, rather than spreading thin across subjects.</p>
                 </div>
 
                 <div class="subjects-grid">
@@ -486,13 +430,13 @@
                     <!-- Subject 2 -->
                     <div class="subject-card reveal delay-100">
                         <div class="subject-header">
-                            <div class="subject-icon bg-blue-light"><i class="fa-solid fa-flask text-blue"></i></div>
-                            <h3>Science</h3>
+                            <div class="subject-icon bg-blue-light"><i class="fa-solid fa-atom text-blue"></i></div>
+                            <h3>Physics</h3>
                         </div>
                         <ul class="subject-bullets">
-                            <li><i class="fa-solid fa-circle-right text-teal"></i> Years 7-10 General Science</li>
                             <li><i class="fa-solid fa-circle-right text-teal"></i> BSSS Years 11 & 12 Physics</li>
-                            <li><i class="fa-solid fa-circle-right text-teal"></i> Lab Report Structure</li>
+                            <li><i class="fa-solid fa-circle-right text-teal"></i> Years 7-10 Physics & Maths Foundations</li>
+                            <li><i class="fa-solid fa-circle-right text-teal"></i> Lab Report Analysis & Draft Reviews</li>
                         </ul>
                     </div>
 
@@ -509,6 +453,77 @@
                             <li><i class="fa-solid fa-circle-right text-teal"></i> Maximizing School Course Scores</li>
                             <li><i class="fa-solid fa-circle-right text-teal"></i> Study Habits (MosoHabit)</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="badge">Pricing Plans</span>
+                    <h2>Simple, Transparent Pricing</h2>
+                    <p class="section-subtitle">No hidden fees, no lock-in contracts. Just premium, focused support.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Pricing Card 1 -->
+                    <div class="pricing-card reveal">
+                        <div class="pricing-header">
+                            <h3>Group Practice</h3>
+                            <div class="price">$30<span>/hr per student</span></div>
+                            <p class="pricing-desc">Collaborative exam practice and homework troubleshooting sessions.
+                            </p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-circle-check"></i> Timed exam-style practice</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Guided group question walkthroughs</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Weekly review exercise sheets</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Shared collaborative workspace</li>
+                        </ul>
+                        <div class="pricing-action">
+                            <a href="#contact" class="btn btn-outline btn-full">Book Free Trial</a>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Card 2 -->
+                    <div class="pricing-card reveal delay-100">
+                        <div class="pricing-header">
+                            <h3>Years 7–10 Tutoring</h3>
+                            <div class="price">$55<span>/hr</span></div>
+                            <p class="pricing-desc">Building strong foundational understanding and confidence in Maths &
+                                Physics.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-circle-check"></i> 1-on-1 personalised tutoring</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Dedicated study habit alignment</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Interactive online collaborative board</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Homework & school prep guidance</li>
+                        </ul>
+                        <div class="pricing-action">
+                            <a href="#contact" class="btn btn-primary btn-full">Book Free Trial</a>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Card 3 (Featured) -->
+                    <div class="pricing-card featured reveal delay-200">
+                        <div class="pricing-badge">Senior Specialisation</div>
+                        <div class="pricing-header">
+                            <h3>Years 11–12 BSSS College</h3>
+                            <div class="price">$60<span>/hr</span></div>
+                            <p class="pricing-desc">Rigorous, goal-oriented prep targeting top course scores and optimal
+                                BSSS scaling.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-circle-check"></i> 1-on-1 BSSS Methods, Specialist & Physics</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Assessment rubric deep-dives</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Lab report structure & draft reviews</li>
+                            <li><i class="fa-solid fa-circle-check"></i> AST practice & scaling explainers</li>
+                        </ul>
+                        <div class="pricing-action">
+                            <a href="#contact" class="btn btn-gold btn-full">Book Free Trial</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -565,8 +580,10 @@
                                 <li><strong>Type of lesson:</strong> Focused 1-on-1 tutoring or guided group exercise
                                     sessions.</li>
                             </ul>
-                            <p>Rates generally range from $30 to $60 per hour. Feel free to fill out the registration
-                                form or text me directly for a personalised quote.</p>
+                            <p>Rates generally range from $30 to $60 per hour. Please see our <a href="#pricing"
+                                    style="color: var(--color-accent); font-weight: 600; text-decoration: underline;">pricing
+                                    section</a> for a detailed breakdown, or fill out the registration form to book your
+                                free trial.</p>
                         </div>
                     </div>
 
@@ -607,7 +624,7 @@
                         <span class="badge badge-yellow">Start Succeeding</span>
                         <h2>Book Your Free Trial Lesson</h2>
                         <p>Fill out the signup form, and I will get back to you within 48 hours to schedule your free
-                            1-hour trial and provide a custom quote.</p>
+                            1-hour trial and discuss your custom tutoring plan.</p>
                     </div>
 
                     <div class="contact-body">
@@ -662,7 +679,8 @@
         <div class="container footer-container">
             <div class="footer-left">
                 <a href="#home" class="footer-logo">
-                    <span class="logo-accent">Moso</span>Habit <span class="logo-sub">Tuition</span>
+                    <img src="assets/icon.svg" alt="MosoHabit Logo" class="logo-img">
+                    <span class="logo-text"><span class="logo-accent">Moso</span>Habit <span class="logo-sub">Tuition</span></span>
                 </a>
                 <p class="footer-tagline">Building the study habits that lead to top BSSS marks in Canberra.</p>
             </div>
