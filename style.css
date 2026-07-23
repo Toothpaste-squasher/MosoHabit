@@ -1140,6 +1140,20 @@ section {
     color: var(--color-text-muted);
 }
 
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.privacy-note {
+    font-size: 0.775rem;
+    color: var(--color-text-light);
+    opacity: 0.75;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
 .story-credentials-list {
     margin-top: 32px;
     text-align: left;
@@ -1789,11 +1803,10 @@ section {
 
 /* Hide on mobile screens */
 @media (max-width: 768px) {
-    .bamboo-widget {
-        display: none !important;
-    }
-
-    .bamboo-restore-btn {
+    .bamboo-widget,
+    .bamboo-restore-container,
+    .bamboo-restore-btn,
+    .bamboo-restore-tooltip {
         display: none !important;
     }
 }
