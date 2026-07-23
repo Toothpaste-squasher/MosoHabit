@@ -23,27 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('scrolled');
         }
 
-        // Hide header on scroll down (mobile only)
-        if (window.innerWidth <= 768) {
-            if (currentScrollY > lastScrollY && currentScrollY > 80) {
-                // Scrolling down and scrolled past the header height -> Hide
-                header.classList.add('header-hidden');
-
-                // If mobile menu is open, close it when hiding header
-                if (navMenu && navMenu.classList.contains('open')) {
-                    navMenu.classList.remove('open');
-                    if (mobileToggle) {
-                        mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
-                    }
-                }
-            } else if (currentScrollY < lastScrollY || currentScrollY <= 0) {
-                // Scrolling up or at the very top -> Show
-                header.classList.remove('header-hidden');
-            }
-        } else {
-            // Keep header visible on desktop
-            header.classList.remove('header-hidden');
-        }
+        // Keep header visible at all times
+        header.classList.remove('header-hidden');
 
         // Avoid negative values from iOS bounce/elastic scroll
         lastScrollY = Math.max(0, currentScrollY);
@@ -79,6 +60,83 @@ document.addEventListener('DOMContentLoaded', () => {
                 mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
             }
         });
+    }
+
+    // --- Smooth Centered Scroll for Anchor Links ---
+    const scrollToSection = (targetId) => {
+        if (!targetId || targetId === '#') return;
+
+        if (targetId === '#home') {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            return;
+        }
+
+        const targetEl = document.querySelector(targetId);
+        if (!targetEl) return;
+
+        const headerEl = document.querySelector('.header');
+        const headerHeight = headerEl ? headerEl.offsetHeight : 70;
+        const viewportHeight = window.innerHeight;
+        const availableHeight = viewportHeight - headerHeight;
+
+        // Measure top of inner content (section-header or container) to exclude empty top padding
+        const contentEl = targetEl.querySelector('.section-header') || targetEl.querySelector('.container') || targetEl;
+        const rect = contentEl.getBoundingClientRect();
+        const elementTop = rect.top + window.scrollY;
+        const elementHeight = targetEl.offsetHeight;
+
+        let targetScrollY;
+
+        if (elementHeight < availableHeight) {
+            // Section fits within screen -> center it vertically below header
+            const verticalMargin = (availableHeight - elementHeight) / 2;
+            targetScrollY = elementTop - headerHeight - verticalMargin;
+        } else {
+            // Section is taller than screen -> align top content badge 24px below fixed header
+            targetScrollY = elementTop - headerHeight - 24;
+        }
+
+        // Activate reveal elements in target section immediately
+        targetEl.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
+
+        // Clamp targetScrollY to valid document bounds
+        const maxScrollY = document.documentElement.scrollHeight - viewportHeight;
+        targetScrollY = Math.max(0, Math.min(targetScrollY, maxScrollY));
+
+        window.scrollTo({
+            top: targetScrollY,
+            behavior: 'smooth'
+        });
+    };
+
+    // Attach custom smooth scrolling to all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+            const targetId = anchor.getAttribute('href');
+            if (targetId && targetId.startsWith('#') && targetId.length > 1) {
+                e.preventDefault();
+
+                if (navMenu && navMenu.classList.contains('open')) {
+                    navMenu.classList.remove('open');
+                    if (mobileToggle) {
+                        mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                    }
+                }
+
+                scrollToSection(targetId);
+                history.pushState(null, '', targetId);
+            }
+        });
+    });
+
+    // Handle initial page load with hash
+    if (window.location.hash) {
+        setTimeout(() => {
+            scrollToSection(window.location.hash);
+        }, 150);
     }
 
 
@@ -134,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     content.style.maxHeight = null;
                 } else {
                     item.classList.add('active');
-                    content.style.maxHeight = content.scrollHeight + 'px';
+                    content.style.maxHeight = content.scrollHeight + 40 + 'px';
                 }
             });
         }
@@ -146,8 +204,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (revealElements.length > 0) {
         const revealObserverOptions = {
             root: null,
-            rootMargin: '0px 0px -12% 0px',
-            threshold: 0.1
+            rootMargin: '100px 0px 100px 0px',
+            threshold: 0
         };
 
         const revealObserver = new IntersectionObserver((entries, observer) => {

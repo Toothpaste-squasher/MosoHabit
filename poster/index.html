@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printable Poster | MosoHabit Tuition</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Screen controls (hidden when printing) -->
+    <div class="controls-panel">
+        <a href="../#home" class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+        <button onclick="toggleColorMode()" class="btn-toggle" id="btn-toggle-mode">
+            <i class="fa-solid fa-circle-half-stroke"></i> Black & White Mode
+        </button>
+        <button onclick="window.print()" class="btn-print">
+            <i class="fa-solid fa-print"></i> Print Poster
+        </button>
+    </div>
+
+    <!-- The Poster Container -->
+    <div class="poster-container">
+        <!-- Decorative background shapes -->
+        <div class="poster-bg-circle-top"></div>
+        <div class="poster-bg-circle-bottom"></div>
+
+
+        <!-- Header -->
+        <div class="poster-header">
+            <div class="logo-group">
+                <img src="../assets/icon.svg" alt="MosoHabit Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title"><span class="logo-accent">Moso</span>Habit</span>
+                    <span class="logo-sub">Tuition</span>
+                </div>
+            </div>
+            <div class="badge-specialised">Maths & Physics Specialisation</div>
+        </div>
+
+        <!-- Hero Title -->
+        <div class="poster-hero">
+            <h1>Specialised Online Maths & Physics Tutoring</h1>
+            <p>Build the consistent study habits that unlock outstanding scores</p>
+        </div>
+
+        <!-- Tutor Credentials -->
+        <h2 class="poster-section-title">About Me</h2>
+        <div class="poster-creds">
+            <div class="avatar-card">
+                <div class="avatar-placeholder">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>Tutor Photo</span>
+                    <small>avatar.jpg</small>
+                </div>
+                <img src="../assets/avatar.jpg" alt="Tutor Profile" class="avatar-img"
+                    onerror="this.style.display='none'; this.previousElementSibling.style.display='flex';">
+                <div class="avatar-tag">Hi, I'm Sam!</div>
+            </div>
+            <div class="creds-list">
+                <div class="cred-card">
+                    <i class="fa-solid fa-star"></i>
+                    <div class="cred-info">
+                        <h3>BSSS 99.80 ATAR</h3>
+                        <p>ACT College Dux & Top Rank Achiever</p>
+                    </div>
+                </div>
+                <div class="cred-card">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="cred-info">
+                        <h3>ACT State Awards</h3>
+                        <p>For Excellence in Mathematics and Physics</p>
+                    </div>
+                </div>
+                <div class="cred-card">
+                    <i class="fa-solid fa-award"></i>
+                    <div class="cred-info">
+                        <h3>Proven Experience</h3>
+                        <p>400+ hours, 2 years, 20+ Canberra students tutored</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core Details & QR Code -->
+        <div class="poster-body">
+            <div class="poster-bullets">
+                <div class="bullet-item">
+                    <div class="bullet-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="bullet-text">
+                        <h4>1-on-1 Online Tutoring (Years 7-12)</h4>
+                        <p>Patient, personalised online lessons using an interactive whiteboard. We work at your child's pace to build self-belief, clarity, and study confidence!</p>
+                    </div>
+                </div>
+                <div class="bullet-item">
+                    <div class="bullet-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="bullet-text">
+                        <h4>Specialised Focus, Highest Quality</h4>
+                        <p>Exclusively tutoring Maths & Physics. By teaching only my two highest-scoring subjects, I guarantee your child receives deep expertise and premium guidance!</p>
+                    </div>
+                </div>
+                <div class="bullet-item">
+                    <div class="bullet-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="bullet-text">
+                        <h4>Depth Over Pace</h4>
+                        <p>No rushed learning or mindless formula memorising. We focus on the "why" behind concepts, reinforcing with practice so exam questions become second nature!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action QR Box -->
+            <div class="poster-cta-box">
+                <div class="promo-badge">
+                    <i class="fa-solid fa-gift"></i> Free 1-Hour Lesson
+                </div>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fmosohabit.com"
+                    alt="QR Code to mosohabit.com" class="qr-code-img">
+                <div class="cta-text">
+                    <h4>Scan to Sign Up</h4>
+                    <p>Scan with your phone to claim your free lesson instantly</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="poster-footer">
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i> tutoringsam777@gmail.com
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-comment-sms"></i> 0470 347 768
+                </div>
+            </div>
+            <div class="footer-action-text">
+                <a href="https://mosohabit.com" class="website-url">mosohabit.com</a>
+                <p>MosoHabit Tuition &copy; 2026</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleColorMode() {
+            const container = document.querySelector('.poster-container');
+            const btn = document.getElementById('btn-toggle-mode');
+            const isGrayscale = container.classList.toggle('grayscale-mode');
+
+            if (isGrayscale) {
+                btn.innerHTML = '<i class="fa-solid fa-palette"></i> Color Mode';
+                btn.classList.add('active');
+            } else {
+                btn.innerHTML = '<i class="fa-solid fa-circle-half-stroke"></i> Black & White Mode';
+                btn.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+
+</html>

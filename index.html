@@ -35,14 +35,17 @@
         <div class="container header-container">
             <a href="#home" class="logo">
                 <img src="assets/icon.svg" alt="MosoHabit Logo" class="logo-img">
-                <span class="logo-text"><span class="logo-accent">Moso</span>Habit <span class="logo-sub">Tuition</span></span>
+                <span class="logo-text">
+                    <span class="logo-title"><span class="logo-accent">Moso</span>Habit</span>
+                    <span class="logo-sub">Tuition</span>
+                </span>
             </a>
 
             <nav class="nav" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
-                    <li class="nav-item"><a href="#why-us" class="nav-link">Why Us</a></li>
+                    <li class="nav-item"><a href="#why-us" class="nav-link">Why Me</a></li>
                     <li class="nav-item"><a href="#subjects" class="nav-link">Subjects</a></li>
                     <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
                     <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
@@ -50,7 +53,8 @@
             </nav>
 
             <div class="header-cta">
-                <a href="#contact" class="btn btn-primary">Book A Free Trial</a>
+                <a href="#contact" class="btn btn-primary"><span class="header-btn-text-desktop">Book A </span>Free
+                    Trial</a>
                 <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -66,8 +70,10 @@
                     <span class="badge hero-badge">Online Tutoring • Canberra BSSS</span>
                     <h1 class="hero-title">Unlock Academic Success in Canberra</h1>
                     <p class="hero-description">
-                        1-on-1 online tutoring for Years 7-12. Focused <strong>exclusively on BSSS Maths & Physics</strong>.
-                        Taught by a <strong>99.80 ATAR</strong> tutor, Canberra Maths and Physics Award Winner, and Year 12
+                        1-on-1 online tutoring for Years 7-12. Focused <strong>exclusively on BSSS Maths &
+                            Physics</strong>.
+                        Taught by a <strong>99.80 ATAR</strong> tutor, Canberra Maths and Physics Award Winner, and Year
+                        12
                         Dux. I specialise my skills to deliver the absolute highest quality instruction. Start today
                         with a <strong>free 1-hour trial lesson</strong>!
                     </p>
@@ -81,64 +87,25 @@
                     </div>
                 </div>
                 <div class="hero-image-wrapper reveal reveal-right">
-                    <!-- SVG illustration representing physics, math, online learning -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
-                        <!-- Define a square clipping mask for the inner elements -->
-                        <defs>
-                            <clipPath id="square-clip">
-                                <rect x="20" y="20" width="460" height="460" rx="30" ry="30" />
-                            </clipPath>
-                        </defs>
-
-                        <!-- Solid background square with slightly rounded corners (Option 1: Warm Cream) -->
-                        <rect x="20" y="20" width="460" height="460" rx="30" ry="30" fill="#FDFBF0" />
-
-                        <!-- Inner elements wrapped in the square clip-path -->
-                        <g clip-path="url(#square-clip)">
-                            <!-- Top Bamboo Segment Background Fill (Light Sage Green) -->
-                            <path
-                                d="M 246,10 C 246,100 246,150 246,180 C 243,195 231,208 232,220 C 233,233 252,236 272,236 C 307,236 370,236 378,236 C 392,236 397,222 394,208 C 390,190 382,150 382,10 Z"
-                                fill="#8A9A86" />
-
-                            <!-- Top Bamboo Segment Outline -->
-                            <path
-                                d="M 246,10 C 246,100 246,150 246,180 C 243,195 231,208 232,220 C 233,233 252,236 272,236 C 307,236 370,236 378,236 C 392,236 397,222 394,208 C 390,190 382,150 382,10"
-                                fill="none" stroke="#3B5249" stroke-width="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-
-                            <!-- Top Segment Inner Vertical Highlight Line -->
-                            <path d="M 345,70 C 347,100 346,130 345,155" fill="none" stroke="#3B5249" stroke-width="8.5"
-                                stroke-linecap="round" />
-
-                            <!-- Bottom Bamboo Segment Background Fill (Light Sage Green) -->
-                            <path
-                                d="M 246,490 C 246,390 246,330 246,305 C 246,290 231,273 234,260 C 238,247 265,254 280,254 C 320,254 375,253 392,256 C 405,258 402,274 396,288 C 388,325 382,395 382,460 Z"
-                                fill="#8A9A86" />
-
-                            <!-- Bottom Bamboo Segment Outline -->
-                            <path
-                                d="M 246,490 C 246,390 246,330 246,305 C 246,290 231,273 234,260 C 238,247 265,254 280,254 C 320,254 375,253 392,256 C 405,258 402,274 396,288 C 388,325 382,395 382,460"
-                                fill="none" stroke="#3B5249" stroke-width="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-
-                            <!-- Bottom Segment Inner Vertical Highlight Line -->
-                            <path d="M 267,330 C 265,360 264,390 264,445" fill="none" stroke="#3B5249"
-                                stroke-width="8.5" stroke-linecap="round" />
-
-                            <!-- Leaves Background Fill & Outline -->
-                            <!-- Top/Vertical Leaf -->
-                            <path
-                                d="M 226,238 C 212,198 168,128 118,98 C 112,94 108,105 118,127 C 138,167 176,226 224,242 Z"
-                                fill="#8A9A86" stroke="#3B5249" stroke-width="9" stroke-linecap="round"
-                                stroke-linejoin="round" />
-
-                            <!-- Bottom/Angled Leaf -->
-                            <path
-                                d="M 224,242 C 189,229 126,196 84,170 C 79,166 82,177 95,192 C 120,222 174,246 218,249 Z"
-                                fill="#8A9A86" stroke="#3B5249" stroke-width="9" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </g>
-                    </svg>
+                    <div class="hero-philosophy-card">
+                        <div class="hero-philosophy-badge">
+                            <i class="fa-solid fa-leaf"></i> The MosoHabit Philosophy
+                        </div>
+                        <blockquote class="hero-philosophy-quote">
+                            "Consistent habits build confidence, and confidence yields outstanding marks."
+                        </blockquote>
+                        <div class="hero-philosophy-divider"></div>
+                        <p class="hero-philosophy-text">
+                            Our name is inspired by the <strong>Moso bamboo</strong>. For its first four years, the
+                            plant grows entirely underground, building a massive root system invisible to the eye. Then,
+                            in the fifth year, it shoots up over 25 meters in just a few weeks.
+                        </p>
+                        <p class="hero-philosophy-text">
+                            Academic success follows the same law: weeks of consistent foundation-building (the roots)
+                            prepare you for explosive vertical results (the shoot).
+                            <strong>Scroll the page to watch our Moso bamboo tracker grow!</strong>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -252,11 +219,17 @@
                             in Mathematics and Physics—my two highest-scoring subjects.
                         </p>
                         <p>
-                            Rather than offering tutoring in every general subject to grow my business, <strong>I choose to focus exclusively on Maths and Physics</strong>. I believe that by specialising, I can remain the best of the best and deliver the absolute highest quality support to my students, helping them clarify complex mathematics, master rigorous physics equations, and ace exams.
+                            Rather than offering tutoring in every general subject to grow my business, <strong>I choose
+                                to focus exclusively on Maths and Physics</strong>. I believe that by specialising, I
+                            can remain the best of the best and deliver the absolute highest quality support to my
+                            students, helping them clarify complex mathematics, master rigorous physics equations, and
+                            ace exams.
                         </p>
                         <p>
                             I believe tutoring is about more than just teaching content. Many students think they
-                            understand a topic well but struggle to apply knowledge during exams. That's why I created MosoHabit Tuition to combine deep Maths and Physics mastery with effective study habits, helping students build long-term success.
+                            understand a topic well but struggle to apply knowledge during exams. That's why I created
+                            MosoHabit Tuition to combine deep Maths and Physics mastery with effective study habits,
+                            helping students build long-term success.
                         </p>
                         <div class="tutor-tags" style="margin-top: 24px;">
                             <span class="tutor-tag"><i class="fa-solid fa-circle-check"></i> BSSS Expert</span>
@@ -268,25 +241,16 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Teaching Philosophy ("MosoHabit") -->
-            <div class="philosophy-section bg-light">
+        <!-- Why Me / How I Teach & Advantages Section -->
+        <section id="why-us" class="why-us bg-light">
+            <div class="philosophy-section">
                 <div class="container">
                     <div class="section-header text-center reveal">
-                        <span class="badge">The Philosophy</span>
-                        <h2>What is "MosoHabit"?</h2>
-                        <p class="section-subtitle">Consistent habits build confidence, and confidence yields
-                            outstanding marks.</p>
-                        <p class="philosophy-desc"
-                            style="max-width: 800px; margin: 20px auto 0 auto; color: var(--color-text-light); line-height: 1.6; font-size: 1.025rem;">
-                            Our name is inspired by the <strong>Moso bamboo</strong>. For its first four years, the
-                            plant grows entirely underground, building a massive root system invisible to the eye. Then,
-                            in the fifth year, it shoots up over 80 feet in just a few weeks.
-                            <br><br>
-                            Academic success follows the same law: weeks of consistent foundation-building (the roots)
-                            prepare you for explosive vertical results (the shoot). <strong>Scroll the page to watch our
-                                Moso bamboo tracker grow!</strong>
-                        </p>
+                        <span class="badge">My Approach</span>
+                        <h2>How I Teach</h2>
+                        <p class="section-subtitle">Guiding students with proven methods for long-term growth</p>
                     </div>
 
                     <div class="philosophy-grid">
@@ -336,16 +300,12 @@
                 </div>
             </div>
 
-        </section>
-
-        <!-- Why Us / Key Features Section -->
-        <section id="why-us" class="why-us bg-light">
-            <div class="container">
+            <!-- Key Features / Advantages -->
+            <div class="container" style="margin-top: 60px;">
                 <div class="section-header text-center reveal">
                     <span class="badge">The MosoHabit Advantage</span>
                     <h2>Unlock the Benefits of Online Tutoring</h2>
-                    <p class="section-subtitle">A holistic approach combining subject knowledge with strategic system
-                        advice.</p>
+                    <p class="section-subtitle"></p>
                 </div>
 
                 <div class="features-grid">
@@ -406,7 +366,8 @@
                 <div class="section-header text-center reveal">
                     <span class="badge">Specialised Subjects</span>
                     <h2>Maths & Physics Specialisation</h2>
-                    <p class="section-subtitle">I focus exclusively on the two subjects I mastered best to guarantee the highest quality support, rather than spreading thin across subjects.</p>
+                    <p class="section-subtitle">I focus exclusively on the two subjects I mastered best to guarantee the
+                        highest quality support, rather than spreading thin across subjects.</p>
                 </div>
 
                 <div class="subjects-grid">
@@ -435,8 +396,10 @@
                         </div>
                         <ul class="subject-bullets">
                             <li><i class="fa-solid fa-circle-right text-teal"></i> BSSS Years 11 & 12 Physics</li>
-                            <li><i class="fa-solid fa-circle-right text-teal"></i> Years 7-10 Physics & Maths Foundations</li>
-                            <li><i class="fa-solid fa-circle-right text-teal"></i> Lab Report Analysis & Draft Reviews</li>
+                            <li><i class="fa-solid fa-circle-right text-teal"></i> Years 7-10 Physics & Maths
+                                Foundations</li>
+                            <li><i class="fa-solid fa-circle-right text-teal"></i> Lab Report Analysis & Draft Reviews
+                            </li>
                         </ul>
                     </div>
 
@@ -473,14 +436,14 @@
                         <div class="pricing-header">
                             <h3>Group Practice</h3>
                             <div class="price">$30<span>/hr per student</span></div>
-                            <p class="pricing-desc">Collaborative exam practice and homework troubleshooting sessions.
-                            </p>
+                            <p class="pricing-desc"> Work with students from other schools and hold each other
+                                accountable.</p>
                         </div>
                         <ul class="pricing-features">
+                            <li><i class="fa-solid fa-circle-check"></i> Weekly sessions to build a good habit</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Weekly exercise worksheets</li>
                             <li><i class="fa-solid fa-circle-check"></i> Timed exam-style practice</li>
                             <li><i class="fa-solid fa-circle-check"></i> Guided group question walkthroughs</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Weekly review exercise sheets</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Shared collaborative workspace</li>
                         </ul>
                         <div class="pricing-action">
                             <a href="#contact" class="btn btn-outline btn-full">Book Free Trial</a>
@@ -493,13 +456,13 @@
                             <h3>Years 7–10 Tutoring</h3>
                             <div class="price">$55<span>/hr</span></div>
                             <p class="pricing-desc">Building strong foundational understanding and confidence in Maths &
-                                Physics.</p>
+                                Science.</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fa-solid fa-circle-check"></i> 1-on-1 personalised tutoring</li>
+                            <li><i class="fa-solid fa-circle-check"></i> First 1-hr-session free of charge</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 1-on-1 tutoring for Maths & Science</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Homework & exam prep guidance</li>
                             <li><i class="fa-solid fa-circle-check"></i> Dedicated study habit alignment</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Interactive online collaborative board</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Homework & school prep guidance</li>
                         </ul>
                         <div class="pricing-action">
                             <a href="#contact" class="btn btn-primary btn-full">Book Free Trial</a>
@@ -516,6 +479,9 @@
                                 BSSS scaling.</p>
                         </div>
                         <ul class="pricing-features">
+                            <li class="pricing-feature-include-all">
+                                <i class="fa-solid fa-layer-group"></i> Includes all Years 7–10 features, plus:
+                            </li>
                             <li><i class="fa-solid fa-circle-check"></i> 1-on-1 BSSS Methods, Specialist & Physics</li>
                             <li><i class="fa-solid fa-circle-check"></i> Assessment rubric deep-dives</li>
                             <li><i class="fa-solid fa-circle-check"></i> Lab report structure & draft reviews</li>
@@ -539,22 +505,25 @@
                     </p>
                 </div>
 
-                <div class="faq-accordion-wrap">
+                <div class="faq-accordion-wrap reveal">
                     <!-- FAQ 1 -->
-                    <div class="faq-item reveal">
+                    <div class="faq-item">
                         <button class="faq-trigger">
                             <span>How does the 1-hour free trial work?</span>
                             <i class="fa-solid fa-chevron-down faq-arrow"></i>
                         </button>
                         <div class="faq-content">
-                            <p>The free trial is a complete 60-minute, no-obligation session. I use this time to assess
-                                the student's current standing, review any upcoming topics or past assessments,
-                                introduce my tutoring style, and map out a study action plan.</p>
+                            <p>The free trial is a full 60-minute, no-obligation session. We briefly assess the
+                                student's current understanding, then jump straight into a real lesson—just like a
+                                standard session—working through upcoming topics or past assessments so you can
+                                experience my tutoring style firsthand.</p>
+                            <p style="margin-top: 10px;">After the trial, there is zero pressure—you simply decide if
+                                we're the right fit to continue.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 2 -->
-                    <div class="faq-item reveal delay-100">
+                    <div class="faq-item">
                         <button class="faq-trigger">
                             <span>What software/tools do you use for online sessions?</span>
                             <i class="fa-solid fa-chevron-down faq-arrow"></i>
@@ -567,7 +536,7 @@
                     </div>
 
                     <!-- FAQ 3 -->
-                    <div class="faq-item reveal delay-200">
+                    <div class="faq-item">
                         <button class="faq-trigger">
                             <span>How are the rates structured?</span>
                             <i class="fa-solid fa-chevron-down faq-arrow"></i>
@@ -588,7 +557,7 @@
                     </div>
 
                     <!-- FAQ 4 -->
-                    <div class="faq-item reveal delay-300">
+                    <div class="faq-item">
                         <button class="faq-trigger">
                             <span>Can you help specifically with BSSS assignment drafts?</span>
                             <i class="fa-solid fa-chevron-down faq-arrow"></i>
@@ -680,7 +649,10 @@
             <div class="footer-left">
                 <a href="#home" class="footer-logo">
                     <img src="assets/icon.svg" alt="MosoHabit Logo" class="logo-img">
-                    <span class="logo-text"><span class="logo-accent">Moso</span>Habit <span class="logo-sub">Tuition</span></span>
+                    <span class="logo-text">
+                        <span class="logo-title"><span class="logo-accent">Moso</span>Habit</span>
+                        <span class="logo-sub">Tuition</span>
+                    </span>
                 </a>
                 <p class="footer-tagline">Building the study habits that lead to top BSSS marks in Canberra.</p>
             </div>
